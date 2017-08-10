@@ -1,0 +1,64 @@
+﻿.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.panel-body {
+    color: #141212;
+}
+
+.bs-callout-info {
+    border-left-color: #1b809e !important;
+}
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 25px;
+    border-radius: 3px;
+}
+
+hr {
+    border-top-color: #1b809e !important;
+    border-top-width: 3px !important;
+    margin-top: unset !important;
+}
+
+.thumbnail {
+    background-color: transparent !important;
+}
+
+.caption {
+    color: #f2f2f2 !important;
+}
+
+i {
+    width: 40px !important;
+    height: 24px !important;
+    font-size: 25px !important;
+}
+
+h2 {
+    padding-top: 10px;
+}
+
+.label-blue {
+    background-color: #1b809e;
+    padding-top: 7px !important;
+    display: block;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+a {
+    color: #000000;
+}

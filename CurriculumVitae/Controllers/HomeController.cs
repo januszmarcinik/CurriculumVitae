@@ -1,5 +1,4 @@
-﻿using CurriculumVitae.Models;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace CurriculumVitae.Controllers
 {
@@ -7,14 +6,12 @@ namespace CurriculumVitae.Controllers
     {
         public ActionResult Index()
         {
-            var model = new CurriculumVitaeViewModel(LangVersion.PL);
-            return View(model);
+            return View();
         }
 
         public ActionResult IndexEN()
         {
-            var model = new CurriculumVitaeViewModel(LangVersion.EN);
-            return View(model);
+            return View();
         }
     }
 }

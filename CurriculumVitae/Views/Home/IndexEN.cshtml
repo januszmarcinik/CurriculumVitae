@@ -1,17 +1,15 @@
-﻿@model CurriculumVitae.Models.CurriculumVitaeViewModel
-
-<div class="row">
+﻿<div class="row">
     <div class="col-sm-4">
-        <img src="~/Images/jmcv.jpg" class="img-responsive img-thumbnail" />
+        <img src="~/Images/jmcv.jpg" class="img-responsive img-thumbnail" alt="Janusz Marcinik photo" />
     </div>
     <div class="col-sm-8 text-center">
         <h1>
             <small>Curriculum Vitae</small><br />
             <strong>Janusz Marcinik</strong>
         </h1>
-        <h2><span class="label label-blue center-block">.NET Developer</span></h2>
+        <h2><span class="label label-blue">.NET Developer</span></h2>
 
-        <div class="bs-callout bs-callout-info" style="padding: 0px;">
+        <div class="bs-callout bs-callout-info" style="padding: 0;">
             <h4>
                 <i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i>
                 <a href="https://www.facebook.com/janusz.marcinik" target="_blank">
@@ -19,7 +17,7 @@
                 </a>
             </h4>
         </div>
-        <div class="bs-callout bs-callout-info" style="padding: 0px;">
+        <div class="bs-callout bs-callout-info" style="padding: 0;">
             <h4>
                 <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i>
                 <a href="https://www.linkedin.com/in/janusz-marcinik-371045144" target="_blank">
@@ -27,7 +25,7 @@
                 </a>
             </h4>
         </div>
-        <div class="bs-callout bs-callout-info" style="padding: 0px;">
+        <div class="bs-callout bs-callout-info" style="padding: 0;">
             <h4>
                 <i class="fa fa-fw fa-github-square" aria-hidden="true"></i>
                 <a href="https://github.com/januszmarcinik" target="_blank">
@@ -38,91 +36,101 @@
     </div>
 </div>
 
-<div class="row">
-
-    <div class="col-sm-6">
-        <h2><span class="label label-blue center-block"><i class="fa fa-id-card-o" aria-hidden="true"></i> Basic informations</span></h2>
-        <h4>
-            <i class="fa fa-fw fa-home" aria-hidden="true"></i>
-            Adress: 38-606 Baligród, 5 Wincentego Pola Street
-        </h4>
-        <h4>
-            <i class="fa fa-fw fa-envelope" aria-hidden="true"></i>
-            Email: januszmarcinik@gmail.com
-        </h4>
-        <h4>
-            <i class="fa fa-fw fa-mobile-phone" aria-hidden="true"></i>
-            Phone: +48 726-816-283
-        </h4>
-        <h4>
-            <i class="fa fa-fw fa-user" aria-hidden="true"></i>
-            Date of birth: 19.06.1994
-        </h4>
-
-        <h2><span class="label label-blue center-block"><i class="fa fa-fw fa-graduation-cap"></i> Education</span></h2>
-        <h4>
-            <small>2015 - current<br /></small>
-            University of Information Technology and Management in Rzeszow<br />
-            <small>Field of study: Information Technology</small>
-        </h4>
-        <hr />
-        <h4>
-            <small>2010 - 2013<br /></small>
-            High School in Lesko<br />
-            <small>Faculty: Math and Physics</small>
-        </h4>
-        <hr />
-
-        <h2><span class="label label-blue center-block"><i class="fa fa-fw fa-briefcase"></i> Work Experience</span></h2>
-        <h4>
-            <small>2016 - current<br /></small>
-            Ideo Sp. z o.o., 35-234 Rzeszów, 13 Nad Przyrwą Street<br />
-            <small>Position: .NET Developer</small>
-        </h4>
-        <h4>Performed tasks</h4>
-        <ul>
-            <li>Software development to streamline production processes</li>
-            <li>B2B software development</li>
-            <li>Work with databases in MSSQL</li>
-            <li>Integrations with ERP systems through the WebAPI and WebServices</li>
-            <li>Working with Git version control system</li>
-            <li>Deploying and maintaining applications on customers servers</li>
-            <li>Direct contact with customers</li>
-        </ul>
-        <hr />
-
-        <h4>
-            <small>2015 - 2016<br /></small>
-            ElektroPro, 38-606 Baligród, 9 T. Kościa Street<br />
-            <small>Position: Office worker</small>
-        </h4>
-        <h4>Performed tasks</h4>
-        <ul>
-            <li>Working on electrical projects</li>
-            <li>Technical drawings in CAD software</li>
-            <li>Software development to streamline work with electrical projects</li>
-        </ul>
-        <hr />
-
-        <h2><span class="label label-blue center-block"><i class="fa fa-fw fa-cog"></i> Other work tools</span></h2>
-        <h4>Ninject - Moq - NLog - AutoMapper - XML - SOAP - JSON</h4>
-
-        <h2><span class="label label-blue center-block"><i class="fa fa-gamepad"></i> Hobbies</span></h2>
-        <h4>Playing on guitar - Football - XBOX</h4>
-
-    </div>
-
-    <div class="col-sm-5 col-sm-offset-1">
-
-        @Html.Partial("_Skills", Model.ProgrammingLanguages)
-        @Html.Partial("_Skills", Model.NETTechnologies)
-        @Html.Partial("_Skills", Model.BackEnd)
-        @Html.Partial("_Skills", Model.FrontEnd)
-        @Html.Partial("_Skills", Model.ForeignLanguages)
-        @Html.Partial("_Skills", Model.Personal)
-
-    </div>
+<h2><span class="label label-blue"><i class="fa fa-id-card-o" aria-hidden="true"></i> Basic informations</span></h2>
+<div style="font-size: 1.2em">
+    <i class="fa fa-fw fa-home"></i>Address: <strong>38-606 Baligród, Wincentego Pola 5</strong><br />
+    <i class="fa fa-fw fa-envelope"></i>Email: <strong>januszmarcinik@gmail.com</strong><br />
+    <i class="fa fa-fw fa-mobile-phone"></i>Phone: <strong>+48 726-816-283</strong><br />
+    <i class="fa fa-fw fa-user"></i>Date of birth: <strong>19.06.1994r.</strong><br />
+    <i class="fa fa-fw fa-language"></i>Foreign language: <strong>English B1+</strong><br />
+    <i class="fa fa-fw fa-gamepad"></i>Hobbies: <strong>Books, football, speedway</strong><br />
+    <i class="fa fa-fw fa-info"></i>Additional: <strong>Driving licence cat.B</strong><br />
 </div>
+
+<h2><span class="label label-blue"><i class="fa fa-fw fa-graduation-cap"></i> Education</span></h2>
+<h4>
+    <small>2015 - currently<br /></small>
+    University of Information Technology and Management in Rzeszow<br />
+    <small>Field of study: Information Technology, Specialization: Programming</small>
+</h4>
+
+<h2><span class="label label-blue"><i class="fa fa-fw fa-briefcase"></i> Work experience</span></h2>
+<h4>
+    <small>01.2018 - currently<br /></small>
+    PGS Software S.A., 35-234 Rzeszów, ul. gen. Stanisława Maczka 6 <br />
+    <small>Position: .NET Developer</small>
+</h4>
+<hr />
+<h4><strong>Team work creating a HRM project, for customer from the near-east:</strong></h4>
+<ul>
+    <li>Daily, direct contact with the client</li>
+    <li>Used technologies: Ports & Adapters, C# .NET MVC 5 / WebApi 2, SQL Server 2016, ElasticSearch, AngularJS</li>
+    <li>Project management in VSTS (TFS) system (Agile, Kanban)</li>
+    <li>Task execution process: branch per task, pull request, code review, merge</li>
+</ul>
+<h4><strong>Workshops and personal growth:</strong></h4>
+<ul>
+    <li>Running a workshop from Azure stack - Azure Redis Cache</li>
+    <li>Participation in monthly "rg-dev" programmers' meetings</li>
+    <li>Participation in the conference Rzesmiosło.IT</li>
+    <li>Participation in English classes (General English)</li>
+</ul>
+
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br />
+<h4>
+    <small>12.2016 - 12.2017<br /></small>
+    Ideo Sp. z o.o., 35-234 Rzeszów, ul. Nad Przyrwą 13<br />
+    <small>Position: .NET Developer</small>
+</h4>
+<hr />
+<h4><strong>Performed tasks</strong></h4>
+<ul>
+    <li>Software development to streamline production processes</li>
+    <li>B2B software development</li>
+    <li>Used technologies: ASP.NET MVC 5, C#, SQL Server, EntityFramework, WebService, WebApi, SOAP</li>
+    <li>Integrations with ERP systems: Insert GT, Insert Navireo</li>
+    <li>Working with GIT version control system</li>
+    <li>Deploying and maintaining applications on customer's server</li>
+    <li>Direct contact with customer</li>
+    <li>Business trips to determine project requirements</li>
+</ul>
+
+<h2><span class="label label-blue"><i class="fa fa-fw fa-microchip"></i> Technologies</span></h2>
+<ul>
+    <li>Backend: <strong>.NET Core, ASP.NET MVC / WebApi</strong></li>
+    <li>Cloud: <strong>Microsoft Azure</strong></li>
+    <li>Frontend: <strong>AngularJS, Angular 2+</strong></li>
+</ul>
+
+<h2><span class="label label-blue"><i class="fa fa-fw fa-cogs"></i> Tools</span></h2>
+<ul>
+    <li>Programming languages: <strong>C#, JavaScript, TypeScript, T-SQL</strong></li>
+    <li>Azure: <strong>Web App, Service Bus, Service Fabric, Storage, Redis Cache, Cosmos DB, VMs, VN-et</strong></li>
+    <li>Databases: <strong>SQL Server 2012, 2014, 2016, 2017</strong></li>
+    <li>Version control management: <strong>GIT, SourceTree, VSTS (TFS), TortoiseGit, VS Team Explorer, BitBucket, GitHub, GitLab</strong></li>
+    <li>Testing: <strong>Moq, NSubstitute, xUnit, FluentAssertions</strong></li>
+    <li>IoC / DI: <strong>Autofac, Unity, Ninject</strong></li>
+    <li>Data management: <strong>ElasicSearch, Azure Tables, Azure Cosmos DB, Redis Cache, EntityFramework, Dapper</strong></li>
+    <li>Projects management: <strong>Redmine, VSTS (TFS), Jira</strong></li>
+    <li>CI / CD: <strong>VSTS (TFS), Jenkins</strong></li>
+    <li>Logging: <strong>NLog, Serilog, SEQ, Kibana</strong></li>
+    <li>Others: <strong>LINQ, Swagger, AutoMapper</strong></li>
+</ul>
+
+<h2><span class="label label-blue"><i class="fa fa-fw fa-cubes"></i> Architecture</span></h2>
+<ul>
+    <li>Architecture patterns: <strong>Microservices, Ports & Adapters (Hexagon), CQRS, REST, Onion structure</strong></li>
+    <li>Design patterns: <strong>Factory, Mediator, Builder, Facade, Singleton, Strategy, Command</strong></li>
+    <li>Testing: <strong>SelfContained, SystemUnderTest, Fixture</strong></li>
+</ul>
+
+<h2><span class="label label-blue"><i class="fa fa-fw fa-trophy"></i> Exams / Certificates</span></h2>
+<ul>
+    <li>MCSA Cloud Platform: <strong>Exam 532: Developing Microsoft Azure Solutions, Exam 533: Implementing Microsoft Azure Infrastructure Solutions</strong></li>
+    <li>MCSA Web Applications: <strong>Exam 483: Programming in C#</strong></li>
+</ul>
 
 <footer>
     <p>
